@@ -1,16 +1,148 @@
-body {
-    padding: 0rem;
-    margin: auto;
+:root{
+    --color: #424448;
+    --txt: rgb(2, 2, 2)
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--txt);
+    font-family: "Playfair-Display", sans-serif;
+}
+
+input {
+    border-radius: 4px;
+    border: solid 2px #E5E7EB;
+    height: 20px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+.submit-button, .description {
+    padding-left: 3vw;
+}
+
+.remote-text {
+    margin: 40px 0 80px;
 }
 
 .container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .logo {
     display: flex;
+    flex-flow: row wrap;
+}
+
+.banner-image {
+    background-image: url(./federico-bottos-Z3NceSeZqgI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(73, 66, 66, 0.644);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-side {
-    flex: 50%;
+    flex: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: #E5E7EB;
 }
 
 .left-side {
-    flex: auto;
+    flex: 1;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 70%;
+}
+
+.card   {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 3px 3px 1px rgb(154, 151, 151);
+}
+
+.description {
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bunger {
+    height: 10vh;
+}
+
+.credit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   
+    padding-left: 20vh;
+    color: #e5e7eb7e
+}
+
+button {
+    background-color: #596D48;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    color: white;
+}
+
+button:hover {
+    background-color: #7cd231;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: #e5e7eb7e;
+}
+
+a:hover {
+    color:#7cd231;
 }

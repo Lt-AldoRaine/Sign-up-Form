@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="left-side">
-            <div class="banner-image">
-                <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
-            </div> 
-        </div>
+        <div class="banner-image">
+            <div class="logo">
+                <img src="Bunger_sticker.webp" alt="logo" class="bunger">
+                <h1>Bunger</h1>
+            </div>
+            <footer class="credit">
+                Photo by <a href="https://unsplash.com/@landscapeplaces?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Federico Bottos</a> on <a href="https://unsplash.com/wallpapers/nature/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </footer>
+        </div> 
         <div class="right-side">
             <div class="description">
                 <h3>
                     This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                     Curabitur cursus consequat nisi, sit amet mollis nisi rhoncus tincidunt. Aenean eget nibh 
                 </h3>
-                <h3>
+                <h3 class="remote-text">
                     You <em>know</em> you want to.
                 </h3>
             </div>
+                
                 <form action="get">
                     <div class="card">
                         
-                            <h3>Let's do this!</h3>
-                            <div class="name">
+                            <p class="form-title">Let's do this!</p>
+                            <div class="input">
                                 <label for="first_name">FIRST NAME*</label>
                                 <input type="text" name="first_name" id="first_name" required>
-                                    
+                            </div>
+                                
+                            <div class="input">
                                 <label for="last_name">LAST NAME*</label>
                                 <input type="text" name="last_name" id="last_name" required>
-                            </div>
-                            
-                            <div class="information">
+                            </div>    
+                                
+                            <div class="input">
                                 <label for="email">EMAIL*</label>
                                 <input type="email" name="email" id="email" required>
-            
+                            </div>
+                                
+                            <div class="input">
                                 <label for="phone_number">PHONE NUMBER</label>
                                 <input type="tel" name="phone_number" id="phone_number">
                             </div>
-                            
-                            <div class="password">
+                            <div class="input">
                                 <label for="password">PASSWORD*</label>
                                 <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-            
+                            </div>
+                            <div class="input">
                                 <label for="confirm-password">CONFIRM PASSWORD*</label>
                                 <input type="password" name="confirm_password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                             </div>
